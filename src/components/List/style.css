@@ -1,0 +1,35 @@
+li{
+    list-style: none;
+}
+
+.List-Border-Green{
+    width: 31.25rem;
+    background-color: gray;
+    border-left: 0.25rem solid green;
+    border-radius: 0.5rem;
+}
+.List-Border-Gray {
+    width: 31.25rem;
+    background-color: gray;
+    border-left: 0.25rem solid rgb(187, 180, 187);
+    border-radius: 0.5rem;
+}
+
+.List {
+    width: 31.25rem;
+    height: 6.25rem;
+    margin-top: 0.688rem;
+    background-color: gray;
+}
+
+.Ul-Father {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-left: 41.25rem;
+    margin-top: -20.625rem;
+}
+
+/*No items*/
