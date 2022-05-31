@@ -2,9 +2,9 @@
     width: 21.875rem;
     height: 21.875rem;
     background-color: white;
-    margin-left: 18.75rem;
+    margin-left: 14.75rem;
     margin-top: 3rem;
-    border: 0.063rem solid gray;
+    border: 0.063rem solid #e9ecef;
 }
 .Form-Items{
     display: flex;

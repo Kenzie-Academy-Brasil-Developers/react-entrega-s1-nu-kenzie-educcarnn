@@ -21,10 +21,15 @@ function List({ listTransactions }) {
                     flexDirection: "column",
                     position: "relative",
                     marginLeft: "1rem",
+                    marginTop: "1rem",
                   }}
                 >
-                  <span>{name.description}</span>
-                  <span>{name.type}</span>
+                  <span style={{ fontWeight: "700", fontSize: "16px" }}>
+                    {name.description}
+                  </span>
+                  <span style={{ fontSize: "12px", color: "#5B6166" }}>
+                    {name.type}
+                  </span>
                 </div>
                 <div>
                   <div
@@ -32,6 +37,8 @@ function List({ listTransactions }) {
                       position: "relative",
                       marginTop: "-2rem",
                       marginLeft: "22rem",
+                      fontSize: "12px",
+                      color: "#212529",
                     }}
                   >
                     R$ {name.value}
@@ -42,8 +49,10 @@ function List({ listTransactions }) {
                     src={ButtonTrash}
                     style={{
                       marginLeft: "28rem",
-                      marginTop: "-3rem",
+                      marginTop: "-3.4rem",
                       position: "absolute",
+                      border: "none",
+                      borderRadius: "6px",
                     }}
                   >
                     <img src={ButtonTrash} alt="Botão Todos" />
@@ -58,10 +67,15 @@ function List({ listTransactions }) {
                     flexDirection: "column",
                     position: "relative",
                     marginLeft: "1rem",
+                    marginTop: "1rem",
                   }}
                 >
-                  <span>{name.description}</span>
-                  <span>{name.type}</span>
+                  <span style={{ fontWeight: "700", fontSize: "16px" }}>
+                    {name.description}
+                  </span>
+                  <span style={{ fontSize: "12px", color: "#5B6166" }}>
+                    {name.type}
+                  </span>
                 </div>
                 <div>
                   <div
@@ -69,6 +83,8 @@ function List({ listTransactions }) {
                       position: "relative",
                       marginTop: "-2rem",
                       marginLeft: "22rem",
+                      fontSize: "12px",
+                      color: "#212529",
                     }}
                   >
                     R$ {name.value}
@@ -79,8 +95,10 @@ function List({ listTransactions }) {
                     src={ButtonTrash}
                     style={{
                       marginLeft: "28rem",
-                      marginTop: "-3rem",
+                      marginTop: "-3.4rem",
                       position: "absolute",
+                      border: "none",
+                      borderRadius: "6px",
                     }}
                   >
                     <img src={ButtonTrash} alt="Botão Todos" />

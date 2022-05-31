@@ -3,9 +3,9 @@ li{
 }
 
 .List-Border-Green{
-    width: 31.25rem;
+    width: 33.25rem;
     height: 4rem;
-    background-color: gray;
+    background-color: #F8F9FA;
     border-left: 0.25rem solid rgb(72, 190, 111);
     border-radius: 0.5rem;
     display: flex;
@@ -14,9 +14,9 @@ li{
     align-items: stretch;
 }
 .List-Border-Gray {
-    width: 31.25rem;
+    width: 33.25rem;
     height: 4rem;
-    background-color: gray;
+    background-color: #F8F9FA;
     border-left: 0.25rem solid rgb(187, 180, 187);
     border-radius: 0.5rem;
     display: flex;
@@ -35,7 +35,9 @@ li{
 .List {
     width: 31.25rem;
     height: 6.25rem;
+    margin-left: -3rem;
     margin-top: 1.688rem;
+    border-radius: 0.5rem;
     background-color: gray;
 }
 
