@@ -4,6 +4,7 @@
     height: 5.688rem;
     margin-top: -2.313rem;
     box-shadow:2.937rem -4.813rem 6.25rem black;
+    position: static;
 }
 
 
@@ -11,4 +12,9 @@
 .Img-NuKenzie {
     margin-left: 14.75rem;
     margin-bottom: -1.063rem;
+}
+.Img-Home{
+    margin-left: 48rem;
+    margin-bottom: -2rem;
+    position: absolute;
 }

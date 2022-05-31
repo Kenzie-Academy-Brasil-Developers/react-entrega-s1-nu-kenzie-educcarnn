@@ -3,7 +3,7 @@ li{
 }
 
 .List-Border-Green{
-    width: 33.25rem;
+    width: 33.7rem;
     height: 4rem;
     background-color: #F8F9FA;
     border-left: 0.25rem solid rgb(72, 190, 111);
@@ -14,7 +14,7 @@ li{
     align-items: stretch;
 }
 .List-Border-Gray {
-    width: 33.25rem;
+    width: 33.7rem;
     height: 4rem;
     background-color: #F8F9FA;
     border-left: 0.25rem solid rgb(187, 180, 187);

@@ -32,7 +32,7 @@ function Form({ listTransactions, setListTransactions }) {
             className="Input-Descrition"
           />
           <span
-          style={{paddingTop: '0.5rem'}}
+          style={{paddingTop: '0.5rem', fontSize: '12px', color: '#868E96'}}
           >Ex: Compra de roupas</span>
         </div>
         <div className="Form-Value">
