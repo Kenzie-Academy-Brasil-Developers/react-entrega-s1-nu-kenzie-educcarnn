@@ -9,8 +9,8 @@ function TotalMoney({listTransactions}) {
     return (
       <>
        <div className="Reduce"> 
-       <span>Valor total R${SumTotal}</span>
-       <span>Valor se refere ao saldo</span>
+       <span className="First-Span">Valor total <span className="Second-Span">R${SumTotal}</span></span>
+       <span className="Msg-Text">Valor se refere ao saldo</span>
        </div>
       </>
      

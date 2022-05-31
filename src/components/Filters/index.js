@@ -5,57 +5,63 @@ import ButtonDisable1 from "../../imgs/Filters/ButtonDisable1.svg"
 import ButtonDisable2 from '../../imgs/Filters/ButtonDisable2.svg'
 
 
-function Filters({listTransactions, setListTransactions}) {
-    console.log(listTransactions)
+function Filters({listTransactions, setfilterTransactions}) {
+  
   function Todos(){
     const listTransactionsTodos = listTransactions.filter((fruits) => {
-      return fruits.type === 'Saída' 
+      return fruits.type 
+  
     })
-
-    setListTransactions([...listTransactions, listTransactionsTodos])
+    setfilterTransactions(listTransactionsTodos)
 
   }
-  // New Alteration
+
 
   function Entrada(){
     const listTransactionsEntrada = listTransactions.filter((fruits) => {
-      
+ 
       return fruits.type === 'Entrada'
     })
 
-    setListTransactions([...listTransactions], listTransactionsEntrada)
- 
+    setfilterTransactions(listTransactionsEntrada) 
   }
 
   function Saida(){
     const listTransactionsSaida =  listTransactions.filter((fruits) => {
       return fruits.type === 'Saída'
   })
-
-    setListTransactions([{...listTransactions, listTransactionsSaida}])
+  
+    setfilterTransactions(listTransactionsSaida)
   }
+
+
+
   return (
     <>
       <div className="Img-Header">
           <img src={Resumofinanceiro} alt="Texto resumo financeiro"></img>
-
           <ul className="Ul-Father-Button">
               <li className="Li-Style-Button">
-              <button className="Border-Style" >
-                  <img src={ButtonDisable} alt="Botão Todos" onClick={Todos}/></button>
+              <button className="Border-Style" onClick={Todos}>
+                  <img src={ButtonDisable} alt="Botão Todos" /></button>
               </li>
               <li className="Li-Style-Button">
-              <button className="Border-Style" >
-                  <img src={ButtonDisable1} alt="Botão Entrada"  onClick={Entrada}/></button>
+              <button className="Border-Style" onClick={Entrada}>
+                  <img src={ButtonDisable1} alt="Botão Entrada"  /></button>
               </li>
               <li className="Li-Style-Button">
-              <button className="Border-Style" >
-                  <img src={ButtonDisable2} alt="Botão Despesa" onClick={() => Saida()}/></button>
+              <button className="Border-Style" onClick={Saida} >
+                  <img src={ButtonDisable2} alt="Botão Despesa" /></button>
               </li>
           </ul>
       </div>
+      
     </>
   );
+
+  
 }
 
-export default Filters;
+export {Filters}
+
+console.log(Filters.Todos)

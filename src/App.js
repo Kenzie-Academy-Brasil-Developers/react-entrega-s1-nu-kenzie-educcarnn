@@ -5,18 +5,24 @@ import { useState } from "react";
 import List from "./components/List";
 import TotalMoney from "./components/TotalMoney";
 import NoItems from "./components/NoItems";
-import Filters from "./components/Filters"
+import { Filters } from "./components/Filters";
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
-  const [filterTransactions, setfilterTransactions] = useState([])
+  const [filterTransactions, setfilterTransactions] = useState([]);
+
 
   return (
     <div className="App">
       <div className="Container">
         <div>
           <HeaderCard></HeaderCard>
-          <Filters listTransactions={listTransactions} setListTransactions={setListTransactions}></Filters>
+          <Filters
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+            filterTransactions={filterTransactions}
+            setfilterTransactions={setfilterTransactions}
+          ></Filters>
           <Form
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
@@ -28,8 +34,9 @@ function App() {
             <>
               <NoItems></NoItems>
             </>
-          )}            
-        
+          )}
+
+          {/* {filterTransactions.length > 0 ? EntradaMap() : SaidaMap()} */}
         </div>
       </div>
     </div>
