@@ -17,7 +17,9 @@ function Form({ listTransactions, setListTransactions }) {
       value,
     };
 
-    setListTransactions([...listTransactions, items]);
+    if(type !== '') {
+      setListTransactions([...listTransactions, items]);
+    }
   }
 
   return (

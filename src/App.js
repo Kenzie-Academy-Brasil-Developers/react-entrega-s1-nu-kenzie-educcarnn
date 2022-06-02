@@ -6,6 +6,8 @@ import List from "./components/List";
 import TotalMoney from "./components/TotalMoney";
 import NoItems from "./components/NoItems";
 import { Filters } from "./components/Filters";
+import ShowFilters from "./components/ShowFilters";
+
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
@@ -27,16 +29,27 @@ function App() {
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
           ></Form>
-          <List listTransactions={listTransactions}></List>
+          <></>
           {listTransactions.length > 0 ? (
-            <TotalMoney listTransactions={listTransactions}></TotalMoney>
+           <TotalMoney listTransactions={listTransactions}></TotalMoney>
           ) : (
             <>
               <NoItems></NoItems>
             </>
           )}
+          <>
+           
+          {filterTransactions.length > 0 ? (
+            <ShowFilters filterTransactions={filterTransactions}/>
+          ) :
+          (
+            <>
+           
+           <List listTransactions={listTransactions}></List>
+           </>)}
+          </>
 
-          {/* {filterTransactions.length > 0 ? EntradaMap() : SaidaMap()} */}
+        
         </div>
       </div>
     </div>

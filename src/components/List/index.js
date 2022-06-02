@@ -8,12 +8,16 @@ function List({ listTransactions }) {
   //    setListTransactions(newList);
   // }
 
+
+
   function Item() {
     return (
       <ul className="Ul-Father">
         {listTransactions.map((name, index) => (
           <li key={index} className="List">
-            {name.type === "Entrada" ? (
+           
+            {
+            name.type === "Entrada" ? (
               <div className="List-Border-Green">
                 <div
                   style={{
@@ -87,7 +91,7 @@ function List({ listTransactions }) {
                       color: "#212529",
                     }}
                   >
-                    R$ {name.value}
+                    R$ -{name.value} 
                   </div>
                 </div>
                 <div style={{ marginTop: "1rem" }}>
@@ -105,7 +109,10 @@ function List({ listTransactions }) {
                   </button>
                 </div>
               </div>
-            )}
+
+            )
+          
+            }
           </li>
         ))}
       </ul>

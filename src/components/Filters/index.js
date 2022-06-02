@@ -35,7 +35,6 @@ function Filters({listTransactions, setfilterTransactions}) {
   }
 
 
-
   return (
     <>
       <div className="Img-Header">
