@@ -1,21 +1,18 @@
 import "./style.css";
 import ButtonTrash from "../../imgs/ButtonTrash.svg";
 
-function List({ listTransactions }) {
+function List({ listTransactions, remove}) {
   // function Remove(id) {
   // const newList = listTransactions.filter((item) => item !== id);
 
   //    setListTransactions(newList);
   // }
-
-
-
   function Item() {
     return (
       <ul className="Ul-Father">
         {listTransactions.map((name, index) => (
           <li key={index} className="List">
-           
+
             {
             name.type === "Entrada" ? (
               <div className="List-Border-Green">
@@ -57,7 +54,10 @@ function List({ listTransactions }) {
                       position: "absolute",
                       border: "none",
                       borderRadius: "6px",
+                      cursor: "pointer",
                     }}
+                    onClick={() => remove(index)}
+                
                   >
                     <img src={ButtonTrash} alt="Botão Todos" />
                   </button>
@@ -103,7 +103,9 @@ function List({ listTransactions }) {
                       position: "absolute",
                       border: "none",
                       borderRadius: "6px",
+                      cursor: "pointer"
                     }}
+                    onClick={() => remove(index)}
                   >
                     <img src={ButtonTrash} alt="Botão Todos" />
                   </button>

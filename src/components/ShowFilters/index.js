@@ -1,6 +1,6 @@
 import ButtonTrash from '../../imgs/ButtonTrash.svg'
 
-function ShowFilters({ filterTransactions }) {
+function ShowFilters({ filterTransactions, removeFilter}) {
   console.log(filterTransactions);
   return (
     <ul className="Ul-Father">
@@ -46,7 +46,9 @@ function ShowFilters({ filterTransactions }) {
                   position: "absolute",
                   border: "none",
                   borderRadius: "6px",
+                  cursor: "pointer",
                 }}
+                onClick={() => removeFilter(index)}
               >
                 <img src={ButtonTrash} alt="Botão Todos" />
               </button>
@@ -92,7 +94,9 @@ function ShowFilters({ filterTransactions }) {
                   position: "absolute",
                   border: "none",
                   borderRadius: "6px",
+                  cursor: "pointer"
                 }}
+                onClick={() => removeFilter(index)}
               >
                 <img src={ButtonTrash} alt="Botão Todos" />
               </button>

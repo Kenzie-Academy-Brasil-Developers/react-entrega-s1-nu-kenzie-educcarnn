@@ -6,6 +6,13 @@
     box-shadow:2.937rem -4.813rem 6.25rem black;
     position: static;
 }
+.Img-Button {
+    cursor: pointer;
+}
+.Button-None{
+    background-color: transparent;
+    border: none;
+}
 
 .Img-NuKenzie {
     margin-left: 14.75rem;
@@ -15,4 +22,5 @@
     margin-left: 48rem;
     margin-bottom: -2rem;
     position: absolute;
+    cursor: pointer;
 }
